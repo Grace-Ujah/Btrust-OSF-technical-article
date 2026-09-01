@@ -48,6 +48,6 @@ This brings us to how separate blocks turn into a Blockchain, look back at the s
 
 
 This interlocking structure that requires P-O-W is why you can't cheat the system like you can with a traditional bank database. It turns rewriting history into a losing game.
-As long as a amlicious person does not hold more than 50% of the entire network's computing power, and honest nodes can reach eachother quickly, the possibility of a transaction being reversed or that history is rewritten decreases with the amount of new blocks being created. Because nodes are hardcodedto follow the chain with the most P-O-W(usually the longest chain). To successfully pull off the fraud, a single hacker would have to out-compute the rest of the honest nodes combined to catch up and build a longer chain. It is impratical and not economically favourable. Any energy they waste trying to redo old blocks is completely lost, leaving the ledger perfectly safe. 
+As long as a amlicious person does not hold more than 50%(this is very costly because anyone in the world can mine) of the entire network's computing power, and honest nodes can reach eachother quickly, the possibility of a transaction being reversed or that history is rewritten decreases with the amount of new blocks being created. Because nodes are hardcodedto follow the chain with the most P-O-W(usually the longest chain). To successfully pull off the fraud, a single hacker would have to out-compute the rest of the honest nodes combined to catch up and build a longer chain. It is impratical and not economically favourable. Any energy they waste trying to redo old blocks is completely lost, leaving the ledger perfectly safe. 
 
-#  What if the attacker has 51% computational power?
+
