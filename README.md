@@ -26,13 +26,13 @@ First, a mining node picks a batch of these unconfirmed transactions to fill up 
 3.) Merkle root: A single 32-byte hash that mathematically summarizes every single transaction included in this block. (If you change one character in a transaction, this root changes completely).<br>
 4.) Timestamp: The current time in seconds since 1970.<br>
 5.) Bits: A code that tells the computer the current difficulty target, basically how hard it is to mine the block.<br>
-6.) Nonce (number used once): A starting number that begins at 0. This is the only variable the miner can change manually.<br>
+6.) Nonce (number used once): A starting number that begins at 0. This is the variable the miner change manually, miners increment the nonce variable while mining so that they can get a completely different hashresult for the block header of their candidate block.<br>
 
 
 # Mining: the guessing game
 
 
-Right now, the block header is invalid. To make the network accept it, the miner has to solve a mathematical puzzle(P-O-W). The rule is simple: the final SHA-256 hash of the block header must be a number smaller than the Bits. In plain English, the hash has to start with a specific number of zeros. Because cryptographic hashes are completely unpredictable, you can't just calculate a winning hash. You have to guess. The miner hashes the header with the nonce at 0. It doesn't work. So they change the nonce to 1 and hash it again. Then 2, then 3, this takes alot of computational power to run. Mining rigs do this trillions of times a second. The exact millisecond a miner hits a nonce that creates a hash with enough leading zeros, the block is successfully made. The miner immediately shouts this winning nonce out to the network. Other nodes check the math once, see it works, and add the block to their ledger.
+Right now, the block header is invalid. To make the network accept it, the miner has to solve a mathematical puzzle(proof of work). The rule is simple: the final SHA-256 hash of the block header must be a number smaller than the Bits. In plain English, the hash has to start with a specific number of zeros. Because cryptographic hashes are completely unpredictable, you can't just calculate a winning hash. You have to guess. The miner hashes the header with the nonce at 0. It doesn't work. So they change the nonce to 1 and hash it again. Then 2, then 3, this takes alot of computational power to run. Mining rigs do this trillions of times a second. The exact millisecond a miner hits a nonce that creates a hash with enough leading zeros, the block is successfully made. The miner immediately shouts this winning nonce out to the network. Other nodes check the math once, see it works, and add the block to their ledger.
 
 #  Incentives,
 if mining takes a lot of computational power to solve the puzzle that gets a block created, then why do miners go on to do it anyways?
@@ -48,6 +48,6 @@ This brings us to how separate blocks turn into a Blockchain, look back at the s
 
 
 This interlocking structure that requires P-O-W is why you can't cheat the system like you can with a traditional bank database. It turns rewriting history into a losing game.
-As long as a amlicious person does not hold more than 50%(this is very costly because anyone in the world can mine) of the entire network's computing power, and honest nodes can reach eachother quickly, the possibility of a transaction being reversed or that history is rewritten decreases with the amount of new blocks being created. Because nodes are hardcodedto follow the chain with the most P-O-W(usually the longest chain). To successfully pull off the fraud, a single hacker would have to out-compute the rest of the honest nodes combined to catch up and build a longer chain. It is impratical and not economically favourable. Any energy they waste trying to redo old blocks is completely lost, leaving the ledger perfectly safe. 
+As long as a a malicious person does not hold more than 50%(this is very costly because anyone in the world can mine) of the entire network's computing power, and honest nodes can reach eachother quickly, the possibility of a transaction being reversed or that history is rewritten decreases with the amount of new blocks being created. Because nodes are hardcodedto follow the chain with the most P-O-W(usually the longest chain). To successfully pull off the fraud, a single hacker would have to out-compute the rest of the honest nodes combined to catch up and build a longer chain. It is impratical and not economically favourable. Any energy they waste trying to redo old blocks is completely lost, leaving the ledger perfectly safe. 
 
 
