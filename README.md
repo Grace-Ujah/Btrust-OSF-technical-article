@@ -39,12 +39,12 @@ For development, if you are a bitcoin developer
 #  What are the different types of nodes
 
 
-Full nodes: A full node receives a full copy of the blockchain. Therefore it can tell if a new block or transaction it receives is valid or not. It is an active participant in the network.
+Full nodes: A full node receives a full copy of the blockchain. Therefore it can tell if a new block or transaction it receives is valid or not. It is an active participant in the network.<br>
      Types of full node;
 Archival nodes: they keep the full history of the blockchain, it can help a new node replicate the entire blockchain too
-Pruned nodes: this node does not keep the full copy of the blockchain. After receiving a copy of the full blockchain, it deletes older blocks further down the chain in order to save disk space. Therefore it cannot serve new nodes.
-Mining node: this node adds blocks to the blockchain by doing a specified amount of work. There are also non-full node miners, they mine by joining a mining pool.
-Lightweight client: they basically read blocks and transactions from other full nodes, they can only verify a block or transaction is in the blockchain and cannot confirm that the information is valid. They minimize bandwidth space, trading off privacy and ability to verify information.
-SPV: simple payment verification is a common type of lightweight client. It only receives the blockheaders of the blockchain, it allows them to keep up with what the longest chain looks like. An SPV operates trusting the assumption that a full node would not lie to it as doing that has no economic benefit for the full node.
+Pruned nodes: this node does not keep the full copy of the blockchain. After receiving a copy of the full blockchain, it deletes older blocks further down the chain in order to save disk space. Therefore it cannot serve new nodes.<br>
+Mining node: this node adds blocks to the blockchain by doing a specified amount of work. There are also non-full node miners, they mine by joining a mining pool.<br>
+Lightweight client: they basically read blocks and transactions from other full nodes, they can only verify a block or transaction is in the blockchain and cannot confirm that the information is valid. They minimize bandwidth space, trading off privacy and ability to verify information.<br>
+SPV: simple payment verification is a common type of lightweight client. It only receives the blockheaders of the blockchain, it allows them to keep up with what the longest chain looks like. An SPV operates trusting the assumption that a full node would not lie to it as doing that has no economic benefit for the full node.<br>
 In conclusion, nodes are the backbone of Bitcoin’s decentralization, while SPV clients offer convenience for everyday users, a full node remains the gold standard for independent verification, while also improving privacy and contributing to the robustness and decentralization of the network
 
