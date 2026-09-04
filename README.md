@@ -23,9 +23,10 @@ To connect a known peer, it starts off with something called the handshake which
 #  What you need to run a node
 
 
-Alot of diskspace; 2TB is recommended, the current blockchain size is 872.59GB, and about 100GB is added every year
-RAM; 2GB in recommendations, the current mempool. It is used to store latest txns in the mempool
-Bandwith; 2+ TB/month is recommended. A node is constantly sending and receiving data from other nodes on the network and needs enough bandwidth to cover it
+Alot of diskspace; 2TB is recommended, the current blockchain size is 872.59GB, and about 100GB is added every year<br>
+RAM; 2GB in recommendations, the current mempool. It is used to store latest txns in the mempool<br>
+Bandwith; 2+ TB/month is recommended. A node is constantly sending and receiving data from other nodes on the network and needs enough bandwidth to cover it<br>
+Mining requires Specialized hardware
 
 
 #  Why should you run a node?
@@ -40,8 +41,8 @@ For development, if you are a bitcoin developer
 
 
 Full nodes: A full node receives a full copy of the blockchain. Therefore it can tell if a new block or transaction it receives is valid or not. It is an active participant in the network.<br>
-     Types of full node;
-Archival nodes: they keep the full history of the blockchain, it can help a new node replicate the entire blockchain too
+     Types of full node;<br>
+Archival nodes: they keep the full history of the blockchain, it can help a new node replicate the entire blockchain too<br>
 Pruned nodes: this node does not keep the full copy of the blockchain. After receiving a copy of the full blockchain, it deletes older blocks further down the chain in order to save disk space. Therefore it cannot serve new nodes.<br>
 Mining node: this node adds blocks to the blockchain by doing a specified amount of work. There are also non-full node miners, they mine by joining a mining pool.<br>
 Lightweight client: they basically read blocks and transactions from other full nodes, they can only verify a block or transaction is in the blockchain and cannot confirm that the information is valid. They minimize bandwidth space, trading off privacy and ability to verify information.<br>
